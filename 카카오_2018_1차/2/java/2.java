@@ -1,12 +1,14 @@
-
 package algorism;
 
 public class cacao2018_1_2 {
-	
 	public static void main(String[] args)
 	{
+		System.out.println(solution("1T2D3D#"));
+	}
+	
+	public static int solution(String data)
+	{
 		int score[] = {1, 1, 1};
-		String data = "1T2D3D#";
 		
 		//문자열 순환 검색
 		int j = 0;
@@ -71,7 +73,7 @@ public class cacao2018_1_2 {
 		{
 			sum += score[i];
 		}
-		System.out.println(sum);
+		return sum;
 	}
 	
 	//제곱근 계산 함수
@@ -84,4 +86,5 @@ public class cacao2018_1_2 {
 		}
 		return result;
 	}
+	
 }
